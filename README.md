@@ -9,7 +9,8 @@ Let’s get a few assumptions out of the way. I will assume that you have Docker
 running properly in your environment. If you do not,
 [this](https://docs.docker.com/engine/installation/) is the best way to get
 started.
-'Make' is on your system and available. If it is not or you are not sure what
+
+_Make_ is on your system and available. If it is not or you are not sure what
 make is, [this](https://www.gnu.org/software/make/) is a good place to start.
 
 testing
@@ -19,9 +20,7 @@ Change to state file location in checked out repositiory.
 - cd jenkins-formula/jenkins
 
 This is where the _Makefile_ is located.
-- run:
-    ``` bash
-    make```
+- run: ``` bash make```
 - test results will return to your screen.
 
 Available states
