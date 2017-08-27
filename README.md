@@ -16,10 +16,10 @@ testing
 =======
 
 Change to state file location in checked out repositiory.
-*- cd jenkins-formula/jenkins
+- cd jenkins-formula/jenkins
 
-This is where the *Makefile* is located.
-- run ```bash make```
+This is where the _Makefile_ is located.
+- run ```shell make```
 - test results will return to your screen.
 
 Available states
