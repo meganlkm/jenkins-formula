@@ -1,2 +1,1 @@
-.kitchen
-vendor
+jenkins/tests/Dockerfile
