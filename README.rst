@@ -18,8 +18,8 @@ testing
 Change to state file location in checked out repositiory.
     * cd jenkins-formula/jenkins
 
-This is where the __Makefile__ is located.
-    * run ```bash make``
+This is where the *Makefile* is located.
+    * run ```bash make```
     * test results will return to your screen.
 
 Available states
