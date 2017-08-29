@@ -37,6 +37,12 @@ Add nginx config for jenkins:
     - group: {{ jenkins.nginx_group }}
     - mode: 440
     - require:
-      - pkg: jenkins 
+      - pkg: jenkins
 
 {% endif %}
+
+Delete nginx default site:
+  file.absent:
+  - name: /etc/nginx/sites-enabled/default
+  - require:
+    - pkg: jenkins

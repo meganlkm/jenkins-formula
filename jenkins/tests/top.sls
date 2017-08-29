@@ -1,6 +1,9 @@
 base:
   'os_family:Debian':
     - match: grain
-    - curl
     - java
     - jenkins
+    - nginx.ng
+    - nginx.ng.config
+    - nginx.ng.service
+    - jenkins.nginx
