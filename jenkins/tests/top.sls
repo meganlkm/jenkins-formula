@@ -3,7 +3,7 @@ base:
     - match: grain
     - java
     - jenkins
-    - nginx.ng
-    - nginx.ng.config
-    - nginx.ng.service
-    - jenkins.nginx
+#    - nginx.ng
+#    - nginx.ng.config
+#    - nginx.ng.service
+#    - jenkins.nginx
