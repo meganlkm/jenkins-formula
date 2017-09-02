@@ -1,9 +1,9 @@
-base:
   'os_family:Debian':
     - match: grain
-    - java
+    - sun-java
+    - sun-java.env
     - jenkins
-#    - nginx.ng
-#    - nginx.ng.config
-#    - nginx.ng.service
-#    - jenkins.nginx
+    - nginx.ng
+    - nginx.ng.config
+    - nginx.ng.service
+    - jenkins.nginx

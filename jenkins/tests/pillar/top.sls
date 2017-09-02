@@ -1,4 +1,5 @@
 base:
   '*':
+    - java
     - jenkins
     - nginx
