@@ -1,5 +1,4 @@
-jenkins
-=======
+# jenkins
 
 With Docker, the feedback cycle shortens to near instantaneous. Here’s how I do
 it. Note that I’m not advocating this as the best way by any means,this is
@@ -13,40 +12,37 @@ started.
 `make` is on your system and available. If it is not or you are not sure what
 `make` is, [this](https://www.gnu.org/software/make/) is a good place to start.
 
-testing
-=======
+# testing
 
 Change to `state` file location in checked out repository.
+
 - cd jenkins-formula/jenkins
 
-This is where the _Makefile_ is located.
-- run: ``` bash make ```
+This is where the ***Makefile*** is located.
+
+- run: `bash make`
 - test results will return to your screen.
 
-Available states
-================
+# Available states
 
-``jenkins``
------------
+## `jenkins`
 
 Install jenkins from the source package repositories and start it up.
 
-``jenkins.nginx``
------------------
+## `jenkins.nginx`
 
 Add a jenkins nginx entry. It depends on the nginx formula being installed and
 requires manual inclusion `nginx` and `jenkins` states in your `top.sls` to
 function, in this order: `jenkins`, `nginx`, `jenkins.nginx`.
 
-Pillar customizations:
-==========================
+# Pillar customizations
 
-``` yaml
-
+```yaml
     jenkins:
       lookup:
         port: 80
         home: /usr/local/jenkins
         user: jenkins
         group: www-data
-        server_name: ci.example.com ```
+        server_name: ci.example.com
+```
