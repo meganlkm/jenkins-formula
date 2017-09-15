@@ -20,11 +20,7 @@ RUN sed -i "s/#master: salt/master: localhost/g" /etc/salt/minion &&\
    sleep 30 &&\
    salt-key --yes --accept-all &&\
    sleep 10 &&\
-   salt \* state.apply &&\
-   IDEMPOTENCE_RESULT=$$(salt \* state.apply 2>/dev/null ) &&\
-   echo $$IDEMPOTENCE_RESULT | grep -v 'changed' &&\
-   (echo 'Idempotence test: \033[0;32mpass\033[0m' && exit 0) ||\
-   (echo 'Idempotence test: \033[0;31mfail\033[0m' && echo "$$IDEMPOTENCE_RESULT" && exit 1)
+   salt \* state.apply
 endef
 export DOCKER_BODY
 .PHONY: default
